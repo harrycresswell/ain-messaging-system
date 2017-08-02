@@ -1,0 +1,52 @@
+/* text alignment */
+
+.u-textAlign--l{
+  text-align: left;
+}
+
+.u-textAlign--r{
+  text-align: right;
+}
+
+/* floats */
+
+.u-float--l {
+  float: left;
+}
+
+.u-float--r {
+  float: right;
+}
+
+.u-pull-left {
+  float: left !important;
+}
+
+.u-pull-right {
+  float: right !important;
+}
+
+// Clearfix
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.cf {
+    *zoom: 1;
+    content: "";
+    clear: both;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.u-hide {
+  display: none;
+}

@@ -1,0 +1,53 @@
+.Inbox {
+  display: flex;
+  height: 100vh;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.Inbox-container-left {
+  flex: 0 0 25%;
+  max-width: 420px;
+  min-width: 240px;
+}
+
+@media (max-width: 700px) {
+  .Inbox-container-left {
+    flex-basis: 73px;
+    min-width: 73px;
+  }
+}
+
+.Inbox-container-right {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.Inbox-container-main {
+  display: flex;
+  flex: 1 1 0%;
+}
+
+.Inbox-main {
+  flex: 2 0 0%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Inbox-sidebar-right {
+  flex: 0 2 33.33%;
+  max-width: 420px;
+  min-width: 200px;
+
+}
+
+@media (max-width: 900px) {
+  .Inbox-sidebar-right {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.Inbox-sidebar-right {
+  border-left: solid 1px #DFE9F2;
+}
+
+.Card {
+  border-bottom: solid 1px #DFE9F2;
+  text-align: center;
+  padding: 30px;
+}
+
+.Card-name {
+  color: $color--darker;
+  font-size: $font-size--l;
+  margin-top: 10px;
+}
+
+.Card-location {
+  font-size: $font-size--xs;
+  margin-top: 10px;
+
+  i {
+    color: $color--brand-blue;
+  }
+}
+
+.Card-description {
+  color: $color--gray-dark;
+  font-size: $font-size--xs;
+  margin-top: 10px;
+}
+//.Media {}

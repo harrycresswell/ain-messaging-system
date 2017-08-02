@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+  {{ partial "navigation-user-active.html" . }}
+
+  <div class="Inbox">
+    <div class="Inbox-container-left">
+        {{ partial "inbox-sidebar-left" . }}
+    </div>
+    <div class="Inbox-container-right">
+        <div class="Inbox-container-main">
+          {{ partial "inbox-main" . }}
+          {{ partial "inbox-sidebar-right" . }}
+        </div>
+    </div>
+  </div><!-- /.Inbox -->
+
+{{ partial "footer.html" . }}

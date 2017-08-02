@@ -1,0 +1,88 @@
+/*
+Component: Core Avatar
+*/
+
+.Avatar {
+  display: inline-block;
+  position: relative;
+
+}
+
+/*
+Component Modifier: Avatar Shapes
+*/
+
+
+.Avatar--square {
+  border-radius: 4px;
+}
+
+.Avatar--round {
+  border-radius: 50%;
+}
+
+
+/*
+Component Modifier: Avatar Types
+*/
+
+.Avatar--initials {
+  color: $color--white;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+
+}
+
+.Avatar--img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  border: 2px solid #fff;
+  z-index: 1;
+}
+
+
+/**
+ * Component Modifier: Avatar Sizes
+ */
+
+ .Avatar--xl {
+   font-size: $font-size--xxl;
+   width: 120px;
+   height: 120px;
+   line-height: 120px;
+ }
+
+.Avatar--l {
+  font-size: $font-size--xl;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+}
+
+.Avatar--m {
+  font-size: $font-size--l;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.Avatar--s {
+  font-size: $font-size--m;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+}
+
+.Avatar--xs {
+  font-size: $font-size--xxs;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}

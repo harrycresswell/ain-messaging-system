@@ -1,0 +1,127 @@
+.Inbox-main {
+  background: $color--white;
+}
+
+.Details {
+  align-items: center;
+  border-bottom: solid 1px #DFE9F2;
+  display: flex;
+  justify-content: space-between;
+  max-height: 62px;
+  min-height: 62px;
+  padding: 10px 0 11px 15px;
+}
+
+@media (max-width: 700px) {
+ .Details-identity {
+   display: none;
+ }
+}
+
+.Details-name {
+  font-size:  $font-size--xs;
+  margin-left: 10px;
+}
+
+.Details-subject {
+  font-weight: $font-weight-bold;
+}
+
+.Details-icons div {
+  display: inline-block;
+  padding: 18px 17px 10px 17px;
+  max-height: 63px;
+  min-height: 62px;
+  vertical-align: middle;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+.Details-toggle {
+  border-left: solid 1px #DFE9F2;
+}
+
+@media (max-width: 900px) {
+ .Details-toggle {
+   display: none !important;
+ }
+}
+
+.Messages {
+  border-bottom: solid 1px #DFE9F2;
+  max-height: 500px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 30px;
+}
+
+.Message {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+ .Message div.Avatar {
+   display: none;
+ }
+}
+
+.Message-bubble {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: $font-size--s;
+  padding: 20px;
+}
+
+.Message-bubble--blue {
+  background: #4A8CFF;
+  color: $color--white;
+  margin-right: 20px;
+}
+
+.Message-bubble--grey {
+  background: #F6F9FB;
+  color: $color--gray-dark;
+  margin-left: 20px;
+}
+
+@media (max-width: 700px) {
+  .Message-bubble--grey {
+    margin-left: 0;
+ }
+
+   .Message-bubble--blue {
+     margin-right: 0;
+  }
+}
+
+.Message-timestamp {
+  color: inherit;
+  font-size: $font-size--xs;
+}
+
+.Compose {
+  min-height: 120px;
+  max-height: 120px;
+  padding: 20px;
+
+  i {
+    cursor: pointer;
+  }
+
+}
+
+.Compose-container {
+  display: flex;
+}
+
+.Compose-textarea {
+  border: 0;
+  font-size: $font-size--s;
+  outline: none;
+  padding: 0 0 0 0.5rem;
+  resize: none;
+  width: 100%;
+}

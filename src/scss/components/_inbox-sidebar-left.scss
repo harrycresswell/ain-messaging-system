@@ -1,0 +1,95 @@
+//.Inbox-sidebar-left {}
+
+.Filter {
+  border-bottom: solid 1px #DFE9F2;
+    border-right: solid 1px #DFE9F2;
+  display: flex;
+}
+
+.Filter-settings {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px 15px 25px;
+}
+
+.Filter-search {
+  display: flex;
+  max-width: 360px;
+  min-width: 160px;
+  padding: 22px 25px 15px 15px;
+}
+
+@media (max-width: 700px) {
+ .Filter-search {
+   display: none;
+ }
+}
+
+.Filter-input {
+  border: 0;
+  font-size: $font-size--xs;
+  outline: none;
+  padding: 0 0 0 0.5rem;
+  width: 360px;
+}
+
+.Conversations {
+  border-right: solid 1px #DFE9F2;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.Conversation {
+  background: #F2F6F9;
+  border-bottom: solid 1px #DFE9F2;
+  display: flex;
+  list-style: none;
+}
+
+.Conversation--unread {
+  background: $color--white;
+}
+
+.Conversation--active {
+  background: rgba(74, 140, 255, 0.1);
+  border-right: solid 2px #4A8CFF;
+}
+
+.Conversation-avatar {
+  padding: 15px;
+}
+
+.Conversation-message {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .Conversation-message {
+    display: none;
+  }
+}
+
+.Conversation-subject {
+  font-size: $font-size--s;
+  font-weight: $font-weight-bold;
+  margin-right: 20px;
+}
+
+.Conversation-timestamp {
+  display: inline-block;
+  font-size: $font-size--xxs;
+  margin-right: 10px;
+}
+
+.Conversation-excerpt {
+  font-size: $font-size--xs;
+}
+
+.Conversation-details {
+
+}

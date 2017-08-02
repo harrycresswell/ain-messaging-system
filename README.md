@@ -1,8 +1,10 @@
-# hugo-gulp
-This is the source code for hugo-gulp starter project :)
+# ain-messaging-system
 
-## Getting started
-If you want to grab a copy to get going with your projects follow the boelow setup.
+This is the source code for a messaging system prototype built for AIN.
+
+It uses my gulp-hugo starter project as it is the quickest way (for me!) to get an scss workflow set up with a templating.
+
+_Note: this is only a front-end prototype which is intended to display the look and responsive functionality only._
 
 ### Install pre-requisites
 
@@ -15,7 +17,7 @@ If you want to grab a copy to get going with your projects follow the boelow set
 ## Usage
 
 ```
-git clone https://github.com/harrycresswell/hugo-gulp.git
+git clone https://github.com/harrycresswell/ain-messaging-system.git
 cd hugo-gulp
 ```
 - Then run `npm install` to install node dependencies

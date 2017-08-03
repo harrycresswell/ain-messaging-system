@@ -63,6 +63,7 @@
 
 .Message {
   display: flex;
+  max-width: 550px;
 }
 
 @media (max-width: 700px) {
@@ -107,8 +108,8 @@
 }
 
 .Compose {
-  min-height: 180px;
-  max-height: 180px;
+  min-height: 190px;
+  max-height: 190px;
   padding: 20px;
 
   i {
@@ -128,4 +129,9 @@
   padding: 0 0 0 0.5rem;
   resize: none;
   width: 100%;
+}
+
+// When Collapse icon is clicked rotate 180 degrees
+.rotate {
+  transform: rotate(-180deg);
 }

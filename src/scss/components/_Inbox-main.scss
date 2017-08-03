@@ -29,7 +29,7 @@
 
 .Details-icons div {
   display: inline-block;
-  padding: 18px 17px 10px 17px;
+  padding: 20px 10px 10px 10px;
   max-height: 63px;
   min-height: 62px;
   vertical-align: middle;
@@ -41,6 +41,10 @@
 
 .Details-toggle {
   border-left: solid 1px #DFE9F2;
+
+  i {
+    padding: 0 7px 0 7px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -51,7 +55,7 @@
 
 .Messages {
   border-bottom: solid 1px #DFE9F2;
-  max-height: 500px;
+  max-height: 600px;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 30px;
@@ -103,8 +107,8 @@
 }
 
 .Compose {
-  min-height: 120px;
-  max-height: 120px;
+  min-height: 180px;
+  max-height: 180px;
   padding: 20px;
 
   i {

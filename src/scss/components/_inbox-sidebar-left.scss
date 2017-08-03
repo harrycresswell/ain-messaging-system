@@ -1,4 +1,13 @@
-//.Inbox-sidebar-left {}
+/**
+ * Left Sidebar
+ */
+
+ //.Inbox-sidebar-left {}
+
+
+ /**
+  * Filter
+  */
 
 .Filter {
   border-bottom: solid 1px #DFE9F2;
@@ -34,6 +43,10 @@
   width: 360px;
 }
 
+/**
+ * Conversations
+ */
+
 .Conversations {
   border-right: solid 1px #DFE9F2;
   height: 92vh;
@@ -42,7 +55,7 @@
 }
 
 .Conversation {
-  background: #F2F6F9;
+  background: #FAFCFD;
   border-bottom: solid 1px #DFE9F2;
   display: flex;
   list-style: none;

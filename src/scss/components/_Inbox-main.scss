@@ -1,6 +1,14 @@
-.Inbox-main {
+/**
+ * Main message area
+ */
+
+ .Inbox-main {
   background: $color--white;
 }
+
+/**
+ * Detaials
+ */
 
 .Details {
   align-items: center;
@@ -52,6 +60,10 @@
    display: none !important;
  }
 }
+
+/**
+ * Messages
+ */
 
 .Messages {
   border-bottom: solid 1px #DFE9F2;
@@ -107,6 +119,12 @@
   font-size: $font-size--xs;
 }
 
+
+/**
+ * Compose Message
+ */
+
+
 .Compose {
   min-height: 190px;
   max-height: 190px;
@@ -131,7 +149,7 @@
   width: 100%;
 }
 
-// When Collapse icon is clicked rotate 180 degrees
+// JS Hook - When Collapse icon is clicked rotate 180 degrees
 .rotate {
   transform: rotate(-180deg);
 }

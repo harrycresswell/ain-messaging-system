@@ -1,6 +1,14 @@
-.Inbox-sidebar-right {
+/**
+ * Right Sidebar
+ */
+
+ .Inbox-sidebar-right {
   border-left: solid 1px #DFE9F2;
 }
+
+/**
+ * User Card
+ */
 
 .Card {
   border-bottom: solid 1px #DFE9F2;
@@ -29,13 +37,16 @@
   margin-top: 10px;
 }
 
+/**
+ * Media and Attachments
+ */
+
 .Media {
   padding: 30px;
 }
 
 .Media-container {
 }
-
 
 // For prototype purposes only
 
@@ -44,7 +55,7 @@
   float: left;
   height: 100px;
   margin-bottom: 20px;
-  width: 46%;
+  width: 45%;
 
   &:nth-child(even) {
     margin-left: 20px;

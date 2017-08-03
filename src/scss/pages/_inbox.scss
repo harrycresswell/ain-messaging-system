@@ -32,18 +32,19 @@
 
 .Inbox-main {
   flex: 2 0 0%;
+  flex-direction: column;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-direction: column;
-
 }
 
 .Inbox-sidebar-right {
   flex: 0 2 33.33%;
   max-width: 420px;
   min-width: 200px;
-
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 @media (max-width: 900px) {

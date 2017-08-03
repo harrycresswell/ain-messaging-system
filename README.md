@@ -18,7 +18,7 @@ _Note: this is only a front-end prototype which is intended to display the look 
 
 ```
 git clone https://github.com/harrycresswell/ain-messaging-system.git
-cd hugo-gulp
+cd ain-messaging-system
 ```
 - Then run `npm install` to install node dependencies
 - Run `gulp` to start a local server and build `_site` in development mode
@@ -43,5 +43,3 @@ rm -rf public
 hugo
 gulp
 ```
-
-**Props to [Dan Bahrami](http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/) for getting me started with a great Hugo-gulp workflow**

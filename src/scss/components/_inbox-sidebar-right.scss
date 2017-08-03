@@ -28,4 +28,37 @@
   font-size: $font-size--xs;
   margin-top: 10px;
 }
-//.Media {}
+
+.Media {
+  padding: 30px;
+}
+
+.Media-container {
+}
+
+
+// For prototype purposes only
+
+.Media-img {
+  background: #F6F9FB;
+  float: left;
+  height: 100px;
+  margin-bottom: 20px;
+  width: 45%;
+
+  &:nth-child(even) {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1044px) {
+  .Media-img {
+    display: block;
+    margin: 0 0 20px 0;
+    width: 100%;
+
+    &:nth-child(even) {
+      margin-left: 0;
+    }
+  }
+}

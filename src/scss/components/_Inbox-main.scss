@@ -89,6 +89,10 @@
   flex-direction: column;
   font-size: $font-size--s;
   padding: 20px;
+
+  ul {
+    margin: 0 0 20px 30px;
+  }
 }
 
 .Message-bubble--blue {
@@ -137,6 +141,28 @@
 .Message-timestamp {
   color: inherit;
   font-size: $font-size--xs;
+}
+
+.Message-interest {
+  margin-left: 80px;
+
+  p {
+    font-size: $font-size--xs;
+    font-style: italic;
+  }
+}
+
+.Message-button-group {
+  div {
+    display: inline-block;
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Message-interest {
+    margin-left: 0;
+  }
 }
 
 

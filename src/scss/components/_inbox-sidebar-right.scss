@@ -22,9 +22,8 @@
   margin-top: 10px;
 }
 
-.Card-location {
+.Card-link {
   font-size: $font-size--xs;
-  margin-top: 10px;
 
   i {
     color: $color--brand-blue;
@@ -32,10 +31,24 @@
 }
 
 .Card-description {
-  color: $color--gray-dark;
-  font-size: $font-size--xs;
+  font-size: $font-size--s;
   margin-top: 10px;
 }
+
+.Card-status {
+  color: $color--darker;
+  font-size: $font-size--xs;
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.Card-button {
+  margin-top: 10px;
+}
+
 
 /**
  * Media and Attachments

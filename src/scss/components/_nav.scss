@@ -25,7 +25,7 @@ $nav-namespace: "c-nav" !default;
 	 }
 
 	&__logo {
-		background-image: url(../images/ain-logo-dark-with-blue-icon-e880b785.png);
+		background-image: url("../images/ain-logo-dark-with-blue-icon-e880b785.png");
 		background-repeat: no-repeat;
 		display: block;
 		width: 147px;
@@ -34,7 +34,7 @@ $nav-namespace: "c-nav" !default;
 	}
 
 	&__icon {
-		background-image: url(../images/icon-ain-dark-blue-a53d3b2f.png);
+		background-image: url("../images/icon-ain-dark-blue-a53d3b2f.png");
 		background-repeat: no-repeat;
 		display: block;
 		width: 47px;
@@ -48,13 +48,13 @@ $nav-namespace: "c-nav" !default;
 			/* Retina-specific stuff here */
 
 		&__logo {
-			background-image: url(../images/ain-logo-dark-with-blue-icon@2x-82707f60.png);
+			background-image: url("../images/ain-logo-dark-with-blue-icon@2x-82707f60.png");
 			background-size: 147px 49px;
 
 		}
 
 		&__icon {
-			background-image: url(../images/icon-ain-dark-blue@2x-a8d3a6bb.png);
+			background-image: url("../images/icon-ain-dark-blue@2x-a8d3a6bb.png");
 			background-size: 47px 47px;
 		}
 

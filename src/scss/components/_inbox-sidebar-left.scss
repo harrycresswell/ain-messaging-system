@@ -55,7 +55,7 @@
 }
 
 .Conversation {
-  background: #FAFCFD;
+  background: #F6F9FB;
   border-bottom: solid 1px #DFE9F2;
   display: flex;
   list-style: none;
@@ -95,12 +95,17 @@
 
 .Conversation-timestamp {
   display: inline-block;
+  float: right;
   font-size: $font-size--xxs;
-  margin-right: 10px;
+  margin: 6px 10px 0px 0;
 }
 
 .Conversation-excerpt {
   font-size: $font-size--xs;
+
+  span {
+    font-weight: 600;
+  }
 }
 
 .Conversation-details {

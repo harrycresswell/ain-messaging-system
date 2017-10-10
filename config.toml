@@ -1,5 +1,5 @@
-baseurl = "http://www.harrycresswell.co.uk/client/ain/ain-messenger/"
-title = "AIN Messaging System Prototype"
+baseurl = "http://www.harrycresswell.co.uk/client/ain/ain-messenger/nudge-message/"
+title = "AIN Messenger - Basic Message"
 languageCode = "en-us"
 
 pygmentsuseclasses = true

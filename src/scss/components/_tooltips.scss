@@ -2,11 +2,11 @@
  * Tooltips
  */
 
- .tooltip {
+ .Tooltip {
     position: relative;
 }
 
-.tooltip::after {
+.Tooltip::after {
     background: rgba(51, 51, 51, .9);
     border-radius: .2rem;
     bottom: 100%;
@@ -27,7 +27,7 @@
     z-index: 9999;
 }
 
-.tooltip:focus::after, .tooltip:hover::after {
+.Tooltip:focus::after, .Tooltip:hover::after {
     opacity: 1;
     -webkit-transform: translate(-50%, -.5rem);
     -ms-transform: translate(-50%, -.5rem);
@@ -35,7 +35,7 @@
 }
 
 
-.tooltip.tooltip-right::after {
+.Tooltip.Tooltip--right::after {
     bottom: 50%;
     left: 100%;
     -webkit-transform: translate(0, 50%);
@@ -43,13 +43,13 @@
     transform: translate(0, 50%);
 }
 
-.tooltip.tooltip-right:focus::after, .tooltip.tooltip-right:hover::after {
+.Tooltip.Tooltip--right:focus::after, .Tooltip.Tooltip-right:hover::after {
     -webkit-transform: translate(.5rem, 50%);
     -ms-transform: translate(.5rem, 50%);
     transform: translate(.5rem, 50%);
 }
 
-.tooltip.tooltip-bottom::after {
+.Tooltip.Tooltip--bottom::after {
     bottom: auto;
     top: 100%;
     -webkit-transform: translate(-50%, 0);
@@ -57,13 +57,13 @@
     transform: translate(-50%, 0);
 }
 
-.tooltip.tooltip-bottom:focus::after, .tooltip.tooltip-bottom:hover::after {
+.Tooltip.Tooltip--bottom:focus::after, .Tooltip.Tooltip--bottom:hover::after {
     -webkit-transform: translate(-50%, .5rem);
     -ms-transform: translate(-50%, .5rem);
     transform: translate(-50%, .5rem);
 }
 
-.tooltip.tooltip-left::after {
+.Tooltip.Tooltip--left::after {
     bottom: 50%;
     left: auto;
     right: 100%;
@@ -72,7 +72,7 @@
     transform: translate(0, 50%);
 }
 
-.tooltip.tooltip-left:focus::after, .tooltip.tooltip-left:hover::after {
+.Tooltip.Tooltip--left:focus::after, .Tooltip.Tooltip--left:hover::after {
     -webkit-transform: translate(-.5rem, 50%);
     -ms-transform: translate(-.5rem, 50%);
     transform: translate(-.5rem, 50%);

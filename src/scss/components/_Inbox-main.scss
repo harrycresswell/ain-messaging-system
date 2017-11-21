@@ -95,13 +95,13 @@
   }
 }
 
-.Message-bubble--blue {
-  background: #4A8CFF;
-  color: $color--white;
+.Message-bubble--right {
+  background: $color--gray-lightest;
+  color: $color--gray-dark;
   margin-right: 15px;
 }
 
-.Message-bubble--grey {
+.Message-bubble--left {
   background: $color--gray-lightest;
   color: $color--gray-dark;
   margin-left: 15px;

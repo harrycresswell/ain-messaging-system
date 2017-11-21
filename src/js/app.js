@@ -9,3 +9,11 @@ $("#toggle").on('click', function() {
   // add  rotate class to icon
    $(".icon-rotate").toggleClass("rotate");
 });
+
+$('.js-reveal').hover(function() {
+        $(this).find('.Conversation-timestamp').hide();
+        $(this).find('.Conversation-icons').show();
+    }, function() {
+        $(this).find('.Conversation-icons').hide();
+        $(this).find('.Conversation-timestamp').show();
+});

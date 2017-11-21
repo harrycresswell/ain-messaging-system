@@ -56,8 +56,11 @@
 
 .Conversation {
   background: #F6F9FB;
+  border-bottom: solid 1px #DFE9F2;
   display: flex;
   list-style: none;
+  position: relative;
+  width: 100%;
 }
 
 .Conversation--unread {
@@ -74,10 +77,9 @@
 }
 
 .Conversation-message {
-  display: flex;
-  flex-direction: column;
   padding: 15px 0;
   width: 100%;
+  flex-direction: column;
 }
 
 @media (max-width: 700px) {
@@ -109,4 +111,66 @@
 
 .Conversation-details {
 
+}
+
+.Conversation-inner {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.Conversation-helper {
+  width: 20px;
+  position: absolute;
+  background: gray;
+  right: 0;
+  height: 100%;
+}
+
+.Conversation-actions {
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+
+  i {
+    color: $color--gray-dark;
+  }
+}
+
+.Conversation-actions__container {
+  height: 100%;
+}
+
+.Conversation-actions__helper{
+    height:100%;
+    width:100%;
+    background-color: $color--white;
+    right:0;
+    position:absolute;
+}
+
+.Conversation-actions__links{
+    height:100%;
+    width: 100%;
+    background-color: $color--white;
+    position: absolute;
+    margin:0;
+    padding:0;
+    top: 0;
+
+  a {
+    float: right;
+  }
+}
+
+.Conversation-actions__container:hover .Conversation-actions__helper {
+  -webkit-transform: translateX(-100%);
+ transform: translateX(-100%);
+}
+
+.Conversation-actions__container .Conversation-actions__helper {
+   transition: all 0.2s ease-in-out;
 }

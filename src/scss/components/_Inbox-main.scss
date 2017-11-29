@@ -28,7 +28,7 @@
 
  }
 
- @media (max-width: 700px) {
+@include until($tablet) {
    .InboxResponseCountdown {
      margin-left: 0;
    }

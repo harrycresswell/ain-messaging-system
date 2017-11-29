@@ -12,7 +12,7 @@
   min-width: 240px;
 }
 
-@media (max-width: 700px) {
+@include until($tablet) {
   .Inbox-container-left {
     flex-basis: 74px;
     min-width: 74px;
@@ -48,7 +48,7 @@
   overflow-y: scroll;
 }
 
-@media (max-width: 900px) {
+@include until($small-screen) {
   .InboxSidebar-right {
     display: none;
   }

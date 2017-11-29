@@ -47,7 +47,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@include until($small-screen) {
  .InboxDetails-toggle {
    display: none !important;
  }

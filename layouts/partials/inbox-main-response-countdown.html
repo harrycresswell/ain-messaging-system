@@ -1,41 +1,43 @@
-<div class="Inbox-main" role="main">
-  <div class="Details">
-    <div class="Details-identity">
+<div class="InboxMain" role="main">
+  <div class="InboxDetails">
+    <div class="InboxDetails-identity">
       <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
           <div class="Avatar--initials">JW</div>
       </div><!-- /.Avatar -->
-      <span class="Details-name">Jim Wolfe</span>
+      <span class="InboxDetails-name">Jim Wolfe</span>
     </div>
-    <div class="Details-subject">Super Startup</div>
-    <div class="Details-icons">
+    <div class="InboxDetails-subject">Super Startup</div>
+    <div class="InboxDetails-icons">
         <div class="Tooltip Tooltip--bottom" data-tooltip="Mark Unread">
             <i class="material-icons md-24">markunread</i>
         </div>
         <div class="Tooltip Tooltip--bottom" data-tooltip="Delete">
             <i class="material-icons md-24">delete</i>
         </div>
-        <div class="Details-toggle">
-            <i id="toggle" class="icon-rotate material-icons md-24">keyboard_arrow_right</i>
+        <div class="InboxDetails-toggle">
+            <i id="toggle" class="js-rotate material-icons md-24">keyboard_arrow_right</i>
         </div>
     </div>
   </div>
   <div class="Messages">
       <div class="Message">
-        <div>
-            <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
-                <div class="Avatar--initials">JW</div>
-            </div><!-- /.Avatar -->
-        </div>
-          <div class="Message-bubble Message-bubble--left">
-              <p>Hi Harry, I’m interested in finding out more about your project.</p>
+          <div class="Message-avatar">
+              <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
+                  <div class="Avatar--initials">JW</div>
+              </div><!-- /.Avatar -->
+          </div><!-- /.Message-avatar -->
+          <div class="Message-content">
+              <div class="Message-bubble Message-bubble--left">
+                  <p>Hi Harry, I’m interested in finding out more about your project.</p>
+              </div><!-- /.Message-bubble -->
               <span class="Message-timestamp">2.30pm</span>
-          </div>
+          </div><!-- /.Message-content -->
       </div><!-- /.Message -->
 
 
       <div class="cf">
           <div class="u-marginTop--s">
-            <div class="Response-countdown">
+            <div class="InboxResponseCountdown">
                 <p>You have <span>00:00:00</span> hours to respond to this message in order to keep your current response rate.</p>
                 <a href="#" class="">What is this?</a>
             </div><!-- /.Response-countdown -->
@@ -43,9 +45,9 @@
       </div><!-- /.cf -->
 
   </div>
-  <div class="Compose">
-    <div class="Compose-container">
-        <textarea class="Compose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
+  <div class="InboxCompose">
+    <div class="InboxCompose-container">
+        <textarea class="InboxCompose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
         <div class="Tooltip Tooltip--top" data-tooltip="Attach">
           <i class="material-icons md-24">attach_file</i>
         </div>

@@ -1,107 +1,117 @@
-<div class="Inbox-main" role="main">
+<div class="InboxMain" role="main">
 
-  <div class="Details">
+  <div class="InboxDetails">
 
-    <div class="Details-identity">
+    <div class="InboxDetails-identity">
         <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
             <div class="Avatar--initials">PB</div>
         </div><!-- /.Avatar -->
 
-        <span class="Details-name">Philip Bradley</span><!-- /.Details-name -->
+        <span class="InboxDetails-name">Philip Bradley</span><!-- /.Details-name -->
     </div><!-- /.Details-identity -->
 
-    <div class="Details-subject">Message subject</div><!-- /.Details-subject -->
+    <div class="InboxDetails-subject">Super Startup</div><!-- /.Details-subject -->
 
-    <div class="Details-icons">
-        <div class="tooltip tooltip-bottom" data-tooltip="Mark Unread">
+    <div class="InboxDetails-icons">
+        <div class="Tooltip Tooltip--bottom" data-tooltip="Mark Unread">
             <i class="material-icons md-24">markunread</i>
         </div>
-        <div class="tooltip tooltip-bottom" data-tooltip="Delete">
+        <div class="Tooltip Tooltip--bottom" data-tooltip="Delete">
             <i class="material-icons md-24">delete</i>
         </div>
-        <div class="Details-toggle">
-            <i id="toggle" class="icon-rotate material-icons md-24">keyboard_arrow_right</i>
+        <div class="InboxDetails-toggle">
+            <i id="toggle" class="js-rotate material-icons md-24">keyboard_arrow_right</i>
         </div>
     </div><!-- /.Details-icons -->
   </div><!-- /.Details -->
 
   <div class="Messages">
       <div class="Message">
-          <div>
+          <div class="Message-avatar">
               <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                   <div class="Avatar--initials">PB</div>
               </div><!-- /.Avatar -->
-          </div>
-            <div class="Message-bubble Message-bubble--left">
-                <p>Hi Harry, did you get a chance to look at our pitch?</p>
-                <span class="Message-timestamp">2.30pm</span>
-          </div>
+          </div><!-- /.Message-avatar -->
+          <div class="Message-content">
+              <div class="Message-bubble Message-bubble--left">
+                  <p>Hi Harry, did you get a chance to look at our pitch?</p>
+              </div>
+              <span class="Message-timestamp">2.30pm</span>
+          </div><!-- /.Message-content -->
       </div><!-- /.Message -->
 
       <div class="u-marginTop--s">
           <div class="Message u-pull-right">
-              <div class="Message-bubble Message-bubble--left">
-                  <p>Hi Philip, I did. I have a few questions for you. When would be a good time to arrange a call?</p>
-                  <span class="Message-timestamp">6 mins ago</span>
-              </div>
-              <div>
+              <div class="Message-content">
+                  <div class="Message-bubble Message-bubble--right">
+                      <p>Hi Philip, I did. I have a few questions for you. When would be a good time to arrange a call?</p>
+                  </div>
+                  <span class="Message-timestamp u-pull-right cf">6 mins ago</span>
+              </div><!-- /.Message-content -->
+              <div class="Message-avatar">
                   <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                       <div class="Avatar--initials">HC</div>
                   </div><!-- /.Avatar -->
-              </div>
+              </div><!-- /.Message-avatar -->
           </div><!-- /.Message -->
       </div><!-- /.u-marginTop-s -->
 
       <div class="cf">
           <div class="u-marginTop--s">
               <div class="Message">
-                  <div>
+                  <div class="Message-avatar">
                       <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                           <div class="Avatar--initials">PB</div>
                       </div><!-- /.Avatar -->
-                  </div>
-                  <div class="Message-bubble Message-bubble--left">
-                      <p>Does 2.30pm work for you?</p>
+                  </div><!-- /.Message-avatar -->
+                  <div class="Message-content">
+                      <div class="Message-bubble Message-bubble--left">
+                          <p>Does 2.30pm work for you?</p>
+                      </div>
                       <span class="Message-timestamp">4 mins ago</span>
-                  </div>
+                  </div><!-- /.Message-content -->
               </div><!-- /.Message -->
           </div><!-- /.u-marginTop-s -->
       </div><!-- /.cf -->
 
       <div class="u-marginTop--s">
           <div class="Message u-pull-right">
-              <div class="Message-bubble Message-bubble--left">
-                  <p>2.30pm works great!</p>
-                  <span class="Message-timestamp">2 mins ago</span>
-              </div>
-              <div>
+              <div class="Message-content">
+                  <div class="Message-bubble Message-bubble--right">
+                      <p>2.30pm works great!</p>
+                  </div>
+                  <span class="Message-timestamp u-pull-right cf">2 mins ago</span>
+              </div><!-- /.Message-content -->
+              <div class="Message-avatar">
                   <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                       <div class="Avatar--initials">HC</div>
                   </div><!-- /.Avatar -->
-              </div>
+              </div><!-- /.Message-avatar -->
           </div><!-- /.Message -->
       </div><!-- /.u-marginTop-s -->
 
       <div class="cf">
           <div class="u-marginTop--s">
               <div class="Message">
-                  <div>
+                  <div class="Message-avatar">
                       <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                           <div class="Avatar--initials">PB</div>
                       </div><!-- /.Avatar -->
-                  </div>
-                  <div class="Loading-bubble">
-                      <p class="saving"><span>.</span><span>.</span><span>.</span></p>
-                  </div>
+                  </div><!-- /.Message-avatar -->
+                  <div class="Message-content">
+                      <div class="Loading-bubble">
+                          <p class="saving"><span>.</span><span>.</span><span>.</span></p>
+                      </div>
+                  </div><!-- /.Message-content -->
               </div><!-- /.Message -->
           </div><!-- /.u-marginTop-s -->
       </div><!-- /.cf -->
 
   </div>
-  <div class="Compose">
-    <div class="Compose-container">
-        <textarea class="Compose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
-        <div class="tooltip tooltip-top" data-tooltip="Attach">
+  <div class="InboxCompose">
+    <div class="InboxCompose-container">
+        <textarea class="InboxCompose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
+        <div class="Tooltip Tooltip--top" data-tooltip="Attach">
           <i class="material-icons md-24">attach_file</i>
         </div>
     </div><!-- /.Compose-container -->

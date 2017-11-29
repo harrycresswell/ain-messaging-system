@@ -1,25 +1,25 @@
-<div class="Inbox-main" role="main">
+<div class="InboxMain" role="main">
 
-    <div class="Details">
-        <div class="Details-identity">
+    <div class="InboxDetails">
+        <div class="InboxDetails-identity">
             <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                 <div class="Avatar--initials">PB</div>
             </div><!-- /.Avatar -->
 
-            <span class="Details-name">Philip Bradley</span>
+            <span class="InboxDetails-name">Philip Bradley</span>
         </div><!-- /.Details-identity -->
 
-        <div class="Details-subject">Super Startup</div><!-- /.Details-subject -->
+        <div class="InboxDetails-subject">Super Startup</div><!-- /.Details-subject -->
 
-        <div class="Details-icons">
+        <div class="InboxDetails-icons">
             <div class="Tooltip Tooltip--bottom" data-tooltip="Mark Unread">
                 <i class="material-icons md-24">markunread</i>
             </div>
             <div class="Tooltip Tooltip--bottom" data-tooltip="Delete">
                 <i class="material-icons md-24">delete</i>
             </div>
-            <div class="Details-toggle">
-                <i id="toggle" class="icon-rotate material-icons md-24">keyboard_arrow_right</i>
+            <div class="InboxDetails-toggle">
+                <i id="toggle" class="js-rotate material-icons md-24">keyboard_arrow_right</i>
             </div>
         </div><!-- /.Details-icons -->
     </div><!-- /.Details -->
@@ -27,25 +27,27 @@
     <div class="Messages">
 
         <div class="Message">
-            <div>
+            <div class="Message-avatar">
                 <div class="Avatar Avatar--round Avatar--xs" style="background: #1B202F;" title="Harry Cresswell">
                     <div class="Avatar--initials">PB</div>
                 </div><!-- /.Avatar -->
-            </div>
-            <div class="Message-bubble Message-bubble--left">
-                <p>Hi James,</p>
-                <p>I think you might be a good fit for our latest project…</p>
-                <p><a href="#">Super Startup</a> is of the fastest growing British ski apparel companies - £830k revenues, 59% growth. £320k of committed wholesale orders for 17/18 (88% of budget) - EIS .</p>
-                    <ul>
-                      <li>Target:	£600,000</li>
-                      <li>Minimum:	£20,000</li>
-                      <li>Investment Raised:	£330,000</li>
-                      <li>Previous Rounds:	£325,000</li>
-                      <li>Stage:	Achieving Sales</li>
-                      <li>Investor Role:	Any</li>
-                    </ul>
+            </div><!-- /.Message-avatar -->
+            <div class="Message-content">
+                <div class="Message-bubble Message-bubble--left">
+                    <p>Hi James,</p>
+                    <p>I think you might be a good fit for our latest project…</p>
+                    <p><a href="#">Super Startup</a> is of the fastest growing British ski apparel companies - £830k revenues, 59% growth. £320k of committed wholesale orders for 17/18 (88% of budget) - EIS .</p>
+                        <ul>
+                          <li>Target:	£600,000</li>
+                          <li>Minimum:	£20,000</li>
+                          <li>Investment Raised:	£330,000</li>
+                          <li>Previous Rounds:	£325,000</li>
+                          <li>Stage:	Achieving Sales</li>
+                          <li>Investor Role:	Any</li>
+                        </ul>
+                </div><!-- /.Message-bubble -->
                 <span class="Message-timestamp">2.30pm</span>
-            </div>
+            </div><!-- /.Message-content -->
         </div><!-- /.Message -->
 
         <div class="cf">
@@ -62,10 +64,10 @@
         </div><!-- /.cf -->
     </div><!-- /.Messages -->
 
-    <div class="Compose">
+    <div class="InboxCompose">
 
-      <div class="Compose-container">
-          <textarea class="Compose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
+      <div class="InboxCompose-container">
+          <textarea class="InboxCompose-textarea" type="text" name="" placeholder="Start typing..."></textarea>
           <div class="Tooltip Tooltip--top" data-tooltip="Attach">
             <i class="material-icons md-24">attach_file</i>
           </div>

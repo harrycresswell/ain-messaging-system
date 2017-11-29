@@ -1,19 +1,19 @@
 // When collapse icon is clicked remove right sidebar
-$('.Details-toggle').on('click', function() {
+$('.InboxDetails-toggle').on('click', function() {
   // Hide right sidebar
-  $('.Inbox-sidebar-right').toggleClass('u-hide');
+  $('.InboxSidebar-right').toggleClass('u-hide');
 });
 
 // When collapse icon is clicked
 $("#toggle").on('click', function() {
   // add  rotate class to icon
-   $(".icon-rotate").toggleClass("rotate");
+   $(".js-rotate").toggleClass("is-rotated");
 });
 
 $('.js-reveal').hover(function() {
-        $(this).find('.Conversation-timestamp').hide();
-        $(this).find('.Conversation-icons').show();
+        $(this).find('.InboxConversation-timestamp').hide();
+        $(this).find('.InboxConversation-icons').show();
     }, function() {
-        $(this).find('.Conversation-icons').hide();
-        $(this).find('.Conversation-timestamp').show();
+        $(this).find('.InboxConversation-icons').hide();
+        $(this).find('.InboxConversation-timestamp').show();
 });

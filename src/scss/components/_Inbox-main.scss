@@ -2,179 +2,20 @@
  * Main message area
  */
 
- .Inbox-main {
+ .InboxMain {
   background: $color--white;
 }
 
-/**
- * Detaials
- */
-
-.Details {
-  align-items: center;
-  border-bottom: solid 1px #DFE9F2;
-  display: flex;
-  justify-content: space-between;
-  max-height: 62px;
-  min-height: 62px;
-  padding: 10px 0 11px 20px;
-}
-
-@media (max-width: 700px) {
- .Details-identity {
-   display: none;
- }
-}
-
-.Details-name {
-  font-size:  $font-size--xs;
-  margin-left: 10px;
-}
-
-.Details-subject {
-  font-weight: $font-weight-bold;
-}
-
-.Details-icons div {
-  display: inline-block;
-  padding: 20px 10px 10px 10px;
-  max-height: 63px;
-  min-height: 62px;
-  vertical-align: middle;
-
-  i {
-    cursor: pointer;
-  }
-}
-
-.Details-toggle {
-  border-left: solid 1px #DFE9F2;
-
-  i {
-    padding: 0 7px 0 7px;
-  }
-}
-
-@media (max-width: 900px) {
- .Details-toggle {
-   display: none !important;
- }
-}
-
-/**
- * Messages
- */
-
-.Messages {
-  max-height: 600px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 20px 20px 220px 20px;
-}
-
-.Message {
-  display: flex;
-  max-width: 550px;
-}
-
-@media (max-width: 700px) {
- .Message div.Avatar {
-   display: none;
- }
-}
-
-.Message-bubble {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  font-size: $font-size--s;
-  padding: 20px;
-
-  ul {
-    margin: 0 0 20px 30px;
-  }
-}
-
-.Message-bubble--right {
-  background: $color--gray-lightest;
-  color: $color--gray-dark;
-  margin-right: 15px;
-}
-
-.Message-bubble--left {
-  background: $color--gray-lightest;
-  color: $color--gray-dark;
-  margin-left: 15px;
-}
-
-@media (max-width: 700px) {
-  .Message-bubble--grey {
-    margin-left: 0;
- }
-
-   .Message-bubble--blue {
-     margin-right: 0;
-  }
-}
-
-.Loading-bubble {
-  background: #F6F9FB;
-  border-radius: 10px;
-  color: $color--gray-dark;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  padding: 0 20px 20px 20px;
-
-  p {
-    margin: 0;
-    font-size: $font-size--xxl;
-  }
-}
-
-@media (max-width: 700px) {
-  .Loading-bubble {
-    margin-left: 0;
- }
-}
-
-.Message-timestamp {
-  color: inherit;
-  font-size: $font-size--xs;
-}
-
-.Message-interest {
-  margin-left: 80px;
-  max-width: 550px;
-
-  p {
-    font-size: $font-size--xs;
-    font-style: italic;
-  }
-}
-
-.Message-button-group {
-  div {
-    display: inline-block;
-    margin-right: 6px;
-  }
-}
-
-@media (max-width: 700px) {
-  .Message-interest {
-    margin-left: 0;
-  }
-}
 
 
 /**
  * Response Countdown
  */
 
- .Response-countdown {
+ .InboxResponseCountdown {
    font-size: $font-size--s;
    border-left: solid 3px #4A8CFF;
-   margin-left: 80px;
+   margin-left: 55px;
    padding-left: 20px;
 
     span {
@@ -188,53 +29,17 @@
  }
 
  @media (max-width: 700px) {
-   .Response-countdown {
+   .InboxResponseCountdown {
      margin-left: 0;
    }
  }
 
 
 
-/**
- * Compose Message
- */
-
-
-.Compose {
-  position: absolute;
-  background: white;
-  border-top: solid 1px #DFE9F2;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-
-  i {
-    cursor: pointer;
-  }
-
-}
-
-.Compose-container {
-  display: flex;
-}
-
-.Compose-textarea {
-  border: 0;
-  font-size: $font-size--s;
-  outline: none;
-  padding: 0 0 0 0.5rem;
-  resize: none;
-  width: 100%;
-}
-
 // JS Hook - When Collapse icon is clicked rotate 180 degrees
-.rotate {
+.is-rotated {
   transform: rotate(-180deg);
 }
-
-
-
-
 
 @keyframes blink {
     /**

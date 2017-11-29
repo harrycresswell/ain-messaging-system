@@ -31,7 +31,7 @@
   flex: 1 1 0%;
 }
 
-.Inbox-main {
+.InboxMain {
   flex: 2 0 0%;
   flex-direction: column;
   height: 100vh;
@@ -40,7 +40,7 @@
   display: flex;
 }
 
-.Inbox-sidebar-right {
+.InboxSidebar-right {
   flex: 0 2 33.33%;
   max-width: 420px;
   min-width: 200px;
@@ -49,7 +49,7 @@
 }
 
 @media (max-width: 900px) {
-  .Inbox-sidebar-right {
+  .InboxSidebar-right {
     display: none;
   }
 }

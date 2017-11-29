@@ -6,14 +6,21 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harrycresswell/ain-messaging-system"
+  },
+  "keywords": [
+    "gulp",
+    "netlify",
+    "sass"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-hash": "^3.1.0",
     "gulp-sass": "^2.3.2"
   }
 }

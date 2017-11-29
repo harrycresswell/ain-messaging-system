@@ -1,0 +1,42 @@
+/**
+ * Inbox Specific User Card
+ */
+
+.InboxCard {
+  border-bottom: solid 1px $color--gray-lighter;
+  text-align: center;
+  padding: 30px;
+}
+
+.InboxCard-name {
+  color: $color--darker;
+  font-size: $font-size--l;
+  margin-top: 10px;
+}
+
+.InboxCard-link {
+  font-size: $font-size--xs;
+
+  i {
+    color: $color--brand-blue;
+  }
+}
+
+.InboxCard-description {
+  font-size: $font-size--xs;
+  margin-top: 10px;
+}
+
+.InboxCard-status {
+  color: $color--darker;
+  font-size: $font-size--xs;
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.InboxCard-button {
+  margin-top: 10px;
+}

@@ -1,0 +1,54 @@
+/**
+ * Detaials
+ */
+
+.InboxDetails {
+  align-items: center;
+  border-bottom: solid 1px $color--gray-lighter;
+  display: flex;
+  justify-content: space-between;
+  max-height: 62px;
+  min-height: 62px;
+  padding: 10px 0 11px 20px;
+}
+
+@media (max-width: 700px) {
+ .InboxDetails-identity {
+   display: none;
+ }
+}
+
+.InboxDetails-name {
+  font-size:  $font-size--xs;
+  margin-left: 10px;
+}
+
+.InboxDetails-subject {
+  font-weight: $font-weight-bold;
+}
+
+.InboxDetails-icons div {
+  display: inline-block;
+  padding: 20px 10px 10px 10px;
+  max-height: 63px;
+  min-height: 62px;
+  vertical-align: middle;
+
+  i {
+    cursor: pointer;
+  }
+}
+
+.InboxDetails-toggle {
+  border-left: solid 1px $color--gray-lighter;
+
+  i {
+    padding: 0 7px 0 7px;
+  }
+}
+
+@media (max-width: 900px) {
+ .InboxDetails-toggle {
+   display: none !important;
+ }
+}

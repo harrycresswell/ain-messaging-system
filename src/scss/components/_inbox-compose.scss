@@ -1,0 +1,31 @@
+/**
+ * Compose Message
+ */
+
+
+.InboxCompose {
+  position: absolute;
+  background: white;
+  border-top: solid 1px $color--gray-lighter;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+
+  i {
+    cursor: pointer;
+  }
+
+}
+
+.InboxCompose-container {
+  display: flex;
+}
+
+.InboxCompose-textarea {
+  border: 0;
+  font-size: $font-size--s;
+  outline: none;
+  padding: 0 0 0 0.5rem;
+  resize: none;
+  width: 100%;
+}

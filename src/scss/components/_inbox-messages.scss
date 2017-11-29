@@ -1,42 +1,41 @@
 /**
- * Messages
+ * InboxMessages
  */
 
-.Messages {
+.InboxMessages {
   max-height: 600px;
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 20px 20px 220px 20px;
 }
 
-.Message {
+.InboxMessage {
   display: flex;
   max-width: 550px;
 }
 
-@media (max-width: 700px) {
- .Message div.Avatar {
+@include until($tablet) {
+ .InboxMessage .Avatar {
    display: none;
  }
 }
 
-.Message-content {
+.InboxMessage-content {
   margin: 0 15px;
 }
 
-.Message-bubble {
+.InboxMessage-bubble {
   border-radius: 10px;
   font-size: $font-size--s;
   margin-bottom: 15px;
   padding: 20px;
-
 
   ul {
     margin: 0 0 20px 30px;
   }
 }
 
-.Message-bubble--right {
+.InboxMessage-bubble--right {
   display: inline-block;
   background: $color--brand-blue;
   color: $color--white;
@@ -44,35 +43,35 @@
   float: right;
 }
 
-.Message-bubble--left {
+.InboxMessage-bubble--left {
   background: $color--gray-lightest;
   color: $color--gray-dark;
   display: inline-block;
 }
 
-.Message-bubble-attachment {
+.InboxMessage-bubble-attachment {
   background: $color--white;
   border: solid 1px $color--gray-lighter;
   color: $color--gray-dark;
 }
 
-@media (max-width: 700px) {
-  .Message-bubble--left {
+@include until($tablet) {
+  .InboxMessage-bubble--left {
     margin-left: 0;
  }
 
-   .Message-bubble--right{
+   .InboxMessage-bubble--right{
      margin-right: 0;
   }
 
-  .Message-bubble-attachment {
+  .InboxMessage-bubble-attachment {
     background: $color--white;
     border: solid 1px $color--gray-lighter;
     color: $color--gray-dark;
   }
 }
 
-.Loading-bubble {
+.InboxLoading-bubble {
   background: #F6F9FB;
   border-radius: 10px;
   color: $color--gray-dark;
@@ -86,19 +85,19 @@
   }
 }
 
-@media (max-width: 700px) {
+@include until($tablet) {
   .Loading-bubble {
     margin-left: 0;
  }
 }
 
-.Message-timestamp {
+.InboxMessage-timestamp {
   color: $color--gray-light;
   font-size: $font-size--xs;
   display: block;
 }
 
-.Message-interest {
+.InboxMessage-interest {
   margin-left: 55px;
   max-width: 550px;
 
@@ -108,7 +107,7 @@
   }
 }
 
-.Message-button-group {
+.InboxMessage-button-group {
     display: inline-block;
     margin-top: 10px;
 
@@ -118,8 +117,8 @@
 
 }
 
-@media (max-width: 700px) {
-  .Message-interest {
+@include until($tablet) {
+  .InboxMessage-interest {
     margin-left: 15px;
   }
 }

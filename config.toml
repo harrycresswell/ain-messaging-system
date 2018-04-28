@@ -1,5 +1,5 @@
-baseurl = "/"
-title = "AIN Messenger - Entrepreneur Message"
+baseurl = "http://harrycresswell.co.uk/client/ain/ain-messenger/investor-message/"
+title = "AIN Messenger - Investor Message"
 languageCode = "en-us"
 
 pygmentsuseclasses = true
